@@ -56,12 +56,12 @@ class TestKhaiii(unittest.TestCase):
         test analyze() api
         """
         try:
-            words = self._api.analyze('안녕? 반가워!')
+            words = self._api.analyze('안녕! 반가워!')
             self.assertEqual(len(words), 2)
             self.assertEqual(len(words[0].morphs), 2)
             self.assertEqual(words[0].morphs[0].lex, '안녕')
             self.assertEqual(words[0].morphs[0].tag, 'IC')
-            self.assertEqual(words[0].morphs[1].lex, '?')
+            self.assertEqual(words[0].morphs[1].lex, '!')
             self.assertEqual(words[0].morphs[1].tag, 'SF')
             self.assertEqual(len(words[1].morphs), 3)
             self.assertEqual(words[1].morphs[0].lex, '반갑')
