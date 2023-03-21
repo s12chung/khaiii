@@ -6,8 +6,8 @@ if(NOT APPLE)
 endif()
 include("cmake/HunterGate.cmake")
 HunterGate(
-    URL "https://github.com/cpp-pm/hunter/archive/v0.23.288.tar.gz"
-    SHA1 "6c9b2bc606d86ae31f96a62fc68f0a593024815b"
+    URL "https://github.com/cpp-pm/hunter/archive/v0.24.15.tar.gz"
+    SHA1 "8010d63d5ae611c564889d5fe12d3cb7a45703ac"
 )
 
 # versions
